@@ -1,11 +1,12 @@
-import express from "express";
+import express, { json } from "express";
 import { Request, Response, NextFunction } from "express-serve-static-core";
 import cookieParser from "cookie-parser";
 import cors from "cors";
 
+const PORT = 3000;
 const app = express();
 
-app.use(express.json())
+app.use(json())
 app.use(cookieParser())
 app.use(cors({
     origin: "http://localhost:5173",
@@ -16,9 +17,9 @@ app.get("/", (_req: Request, res: Response, _next: NextFunction) => {
     res.send("Hello, World!");
 });
 
-// handle 404
+// 404 Not Found
 app.use((_req: Request, res: Response) => {
     res.status(404).send("404 Not Found");
 });
 
-app.listen(3000, () => console.log(`Server is running on port 3000`));
+app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
