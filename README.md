@@ -1,10 +1,1 @@
-# express + typescript + pg get started
-
-#### how it works on your folder
-    1. git clone https://github.com/ppondeu/express-typescript-get-started.git <new_folder_name>
-    
-    2. cd <new_folder_name>
-
-    3. npm install
-    
-    4. npm run dev
+https://docs.google.com/forms/d/e/1FAIpQLSc_dqAJUSHhXW_h8GurkodomEQaK9LnY2EyaXwsO1ClzWQr0g/viewform
